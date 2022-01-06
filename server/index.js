@@ -11,9 +11,8 @@ webpush.setVapidDetails("http://mkumaran.net", vapidKeys.publicKey, vapidKeys.pr
 // This is the same output of calling JSON.stringify on a PushSubscription
 const pushSubscription = {
   endpoint:
-    "https://fcm.googleapis.com/fcm/send/eH0VT3rmtbM:APA91bGDI_mMZci-EMaD-BQYRr88PeNGZQ4mRgGCh4u8D-4f3oBgT5Fkw6tUqxfs5wKWufJfUidaLDZ13Cz3DrGiUYFIwSZZO0pU6C-s1oHFKx5IAAubp4de0NBXzLhG6KgiRJAv-itC",
+    "https://fcm.googleapis.com/fcm/send/eEpreGwJ8zo:APA91bGt604P9RNbTTEz8JZvbz9lLL6OkFj2L2rO6aGjyBGQAAD2aUBxTrsvVKd_oQNoUhMzQ9TjN2gjnFPFEt8w1JCL2sEx6SkDvuXEQO4hoeSOuYt10EuTe2POkLRLff1CxrB6kefJ",
   expirationTime: null,
-  keys: { p256dh: "BFvhiMA0TJ-mXTv8Bdzl4Lv8-4K1QJl4fT-BqOU-Zd2leW0PGa5WfNGvTCIi-qhgjT91tnlUmrWXFT_20E63mbU", auth: "BTdkjXq4vLVW4Nace5TKxQ" },
+  keys: { p256dh: "BGdXhbRKY7X1D01TPceKyavUcHTT5Y9C-MtlEqKYF2bsdCWdbX4D0dNTFSLYA237Kfja9de9mnVEqltzCtg-5_A", auth: "1Ap3fqxvtzRB8axB5E_cUg" },
 };
-
 webpush.sendNotification(pushSubscription, "Your Push Payload Text");
