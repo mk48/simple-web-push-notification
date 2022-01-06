@@ -9,6 +9,13 @@
   <body>
     <button onclick="subscribe()">Subscribe</button>
 
+    <p>
+      <div>
+        subscriber info
+      </div>
+      <textarea id="txt" name="txt" rows="5" cols="50"></textarea>
+    </p>
+
     <script>
       async function subscribe() {
         let sw = await navigator.serviceWorker.ready;
@@ -16,7 +23,9 @@
           userVisibleOnly: true,
           applicationServerKey: "BKRYwkit4PdOnVOMdDUF5yrzYycpey3rsFFrVT2sErlYgZZI2DWHSbXfFYClbG8l_bcMd6hw4zpqf4mZUs7mtVs",
         });
-        console.log(JSON.stringify(push));
+        var subscribeInfo = JSON.stringify(push);
+        var txt = document.getElementById("txt");
+        txt.value = subscribeInfo;
       }
 
       if ("serviceWorker" in navigator) {
